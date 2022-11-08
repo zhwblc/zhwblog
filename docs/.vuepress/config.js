@@ -2,16 +2,23 @@ module.exports = {
   title: 'zhw 博客',
   description: '张浩伟 的个人博客',
   base: '/zhwblog/',
-
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@img': 'imges'
+      }
+    }
+  },
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      {
-        text: 'zhw 博客',
-        items: [
-          { text: 'Github', link: 'https://github.com/zhwblc' },
-        ]
-      }
+      { text: 'Github', link: 'https://github.com/zhwblc' }
+      // {
+      //   text: 'zhw 博客',
+      //   items: [
+      //     { text: 'Github', link: 'https://github.com/zhwblc' },
+      //   ]
+      // }
     ],
     // 侧边栏配置
     sidebar: [
@@ -25,11 +32,10 @@ module.exports = {
       },
       {
         title: "文章导航",
-        path: '/note/githubVueToPages', // 默认激活的选项
+        path: '/github/githubVueToPages', // 默认激活的选项
         collapsable: false, // 不折叠
         children: [
-          { title: "java插件开发", path: "/note/githubVueToPages" },
-          { title: "nvm安装教程", path: "/note/nvmInstall" }
+          { title: "如何部署vue到github", path: "/github/githubVueToPages" },
         ],
       }
     ]
