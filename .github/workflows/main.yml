@@ -22,7 +22,7 @@ jobs:
       # 执行npm脚本打包项目
       - name: Install and Build
         run: |
-          npm install --force
+          npm install
           npm run build
       
       # 执行crazy-max/ghaction-github-pages将项目发布到Github Pages
