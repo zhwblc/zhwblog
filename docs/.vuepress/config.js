@@ -27,7 +27,7 @@ module.exports = {
       {
         title: "原生js实现功能",
         path: '/jsRealize/dragTool', // 默认激活的选项
-        // collapsable: false,
+        collapsable: false,
         children: [
           { title: "拖拽功能的实现", path: "/jsRealize/dragTool" },
         ],
