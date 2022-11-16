@@ -30,7 +30,9 @@ module.exports = {
         collapsable: false,
         children: [
           { title: "拖拽功能的实现", path: "/originalRealize/dragTool" },
-          { title: "修改单选框和复选框的样式", path: "/originalRealize/raCheckStyle" }
+          { title: "修改单选框和复选框的样式", path: "/originalRealize/raCheckStyle" },
+          { title: "javascript修改css样式的方法", path: "/originalRealize/jsModfiyCss" },
+          { title: "CSS链接伪类的顺序", path: "/originalRealize/cssFakeClass" }
         ],
       },
       {
