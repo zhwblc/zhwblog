@@ -45,7 +45,7 @@ module.exports = {
       },
       {
         title: "uniapp相关",
-        path: '/uniappAbout', // 默认激活的选项
+        path: '/uniappAbout/eventDelegate', // 默认激活的选项
         collapsable: false, // 不折叠
         children: [
           { title: "事件委托", path: "/uniappAbout/eventDelegate" },
