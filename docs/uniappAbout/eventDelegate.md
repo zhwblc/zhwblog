@@ -1,5 +1,3 @@
-## uniapp 中的事件委托
-
 ### 1、在标签中使用:data-** 进行绑定
 
 ### 2、在父元素使用 @click="clickChangeReact($event)"
