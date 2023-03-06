@@ -5,7 +5,7 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        '@img': 'imges'
+        '@img': 'images'
       }
     }
   },
@@ -41,6 +41,14 @@ module.exports = {
         collapsable: false, // 不折叠
         children: [
           { title: "如何部署vue到github", path: "/github/githubVueToPages" },
+        ],
+      },
+      {
+        title: "uniapp相关",
+        path: '/uniappAbout', // 默认激活的选项
+        collapsable: false, // 不折叠
+        children: [
+          { title: "事件委托", path: "/uniappAbout/eventDelegate" },
         ],
       }
     ]
