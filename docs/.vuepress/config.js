@@ -49,6 +49,8 @@ module.exports = {
         collapsable: false, // 不折叠
         children: [
           { title: "事件委托", path: "/uniappAbout/eventDelegate" },
+          { title: "圆环进度条实现", path: "/uniappAbout/circleProgress/circleProgress" },
+          { title: "样式相关", path: "/uniappAbout/styleAbout/styleAbout" },
         ],
       }
     ]
