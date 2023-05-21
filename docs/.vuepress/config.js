@@ -52,6 +52,14 @@ module.exports = {
           { title: "圆环进度条实现", path: "/uniappAbout/circleProgress/circleProgress" },
           { title: "样式相关", path: "/uniappAbout/styleAbout/styleAbout" },
         ],
+      },
+      {
+        title: "canvas相关",
+        path: '/canvas/canvas2d', // 默认激活的选项
+        collapsable: false, // 不折叠
+        children: [
+          { title: "canvas2d相关", path: "/uniappAbout/canvas/canvas2d" },
+        ],
       }
     ]
   }

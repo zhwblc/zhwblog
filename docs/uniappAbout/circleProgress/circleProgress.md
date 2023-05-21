@@ -1,13 +1,9 @@
-## 兼容小程序
+## 方法一、采用view组件+css的写法
 
-### 说明
-
-#### 采用view组件+css的写法
-
-1. 这里不采用canvas，因为微信小程序中，canvas有层级问题
+1. 当使用uniapp中的canvas组件的时候，微信小程序中有兼容问题，可以采用原生的canvas2d进行优化，具体请参考 [方法二、canvas2d](./circleProgress.md#方法二、canvas2d)
 2. 这里不采用svg，因为微信小程序不兼容
 
-#### 实现效果：
+### 实现效果：
 
 在微信开发者工具中，会有一点缝隙，在实机演示里面没有
 
@@ -215,3 +211,11 @@
 </style>
 ```
 
+## 方法二、canvas2d
+
+### 说明：
+
+1. 微信小程序可以使用canvas2d来避免层级问题
+2. uniapp官方canvas2d的方法不太支持
+3. canvas绘制的踩坑请参考：[canvas踩坑记录](../canvas/canvas2d.md)
+4. 具体实现请参考：[CircleProgress](https://github.com/zhwblc/circleProgress)
