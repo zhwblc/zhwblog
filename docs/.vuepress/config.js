@@ -1,7 +1,7 @@
 module.exports = {
   title: 'zhw 博客',
   description: '张浩伟 的个人博客',
-  base: '/',
+  base: '/zhwblog/',
   configureWebpack: {
     resolve: {
       alias: {
