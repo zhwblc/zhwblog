@@ -27,6 +27,7 @@ jobs:
       - name: Install and Build
         run: |
           npm install
+          npx update-browserslist-db@latest
           npm run build
       
       # 执行crazy-max/ghaction-github-pages将项目发布到Github Pages
