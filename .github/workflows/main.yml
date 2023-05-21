@@ -11,13 +11,17 @@ jobs:
   # build-and-deploy 为任务的ID
   build-and-deploy:
     # 运行所需要的环境
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
 
     steps:
       # 步骤名
       - name: Checkout
         # 使用的actions脚本，这里是官方提供的获取源码脚本
         uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16-nightly
 
       # 执行npm脚本打包项目
       - name: Install and Build
@@ -30,10 +34,10 @@ jobs:
         if: success()
         uses: crazy-max/ghaction-github-pages@v3
         with:
-   # 发布到的分支
+          # 发布到的分支
           target_branch: gh-pages
-   # 发布到的目录
+          # 发布到的目录
           build_dir: docs/.vuepress/dist
         env:
-  # 关联的token，这里填写之前创建的action变量
+          # 关联的token，这里填写之前创建的action变量
           GITHUB_TOKEN: ${{ secrets.VUETOKEN }}
