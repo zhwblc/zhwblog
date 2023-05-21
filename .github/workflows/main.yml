@@ -24,9 +24,6 @@ jobs:
           node-version: 16.15.1
 
       # 执行npm脚本打包项目
-      - name: update-browserslist
-        run: |
-          npx update-browserslist-db@latest
       - name: Install
         run: |
           npm install
