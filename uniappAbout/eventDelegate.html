@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1、在标签中使用:data-** 进行绑定 | zhw 博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="张浩伟 的个人博客">
+    
+    <link rel="preload" href="/zhwblog/assets/css/0.styles.c0c0c0a9.css" as="style"><link rel="preload" href="/zhwblog/assets/js/app.ba016abe.js" as="script"><link rel="preload" href="/zhwblog/assets/js/2.977dbf13.js" as="script"><link rel="preload" href="/zhwblog/assets/js/15.8c6522ca.js" as="script"><link rel="prefetch" href="/zhwblog/assets/js/10.93a24e03.js"><link rel="prefetch" href="/zhwblog/assets/js/11.d09932f7.js"><link rel="prefetch" href="/zhwblog/assets/js/12.f34a940c.js"><link rel="prefetch" href="/zhwblog/assets/js/13.a83184c5.js"><link rel="prefetch" href="/zhwblog/assets/js/14.f3d970b7.js"><link rel="prefetch" href="/zhwblog/assets/js/16.02b5dff0.js"><link rel="prefetch" href="/zhwblog/assets/js/3.e992ec7a.js"><link rel="prefetch" href="/zhwblog/assets/js/4.3bcb3f64.js"><link rel="prefetch" href="/zhwblog/assets/js/5.8aa6e37c.js"><link rel="prefetch" href="/zhwblog/assets/js/6.5a1134b6.js"><link rel="prefetch" href="/zhwblog/assets/js/7.8db53882.js"><link rel="prefetch" href="/zhwblog/assets/js/8.fdd24300.js"><link rel="prefetch" href="/zhwblog/assets/js/9.90cbe809.js">
+    <link rel="stylesheet" href="/zhwblog/assets/css/0.styles.c0c0c0a9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zhwblog/" class="home-link router-link-active"><!----> <span class="site-name">zhw 博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zhwblog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://github.com/zhwblc" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zhwblog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://github.com/zhwblc" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/zhwblog/" class="sidebar-heading clickable router-link-active"><span>导航栏</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/zhwblog/" aria-current="page" class="sidebar-link">学前必读</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/zhwblog/originalRealize/dragTool" class="sidebar-heading clickable"><span>原生html+css+js实现功能</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/zhwblog/originalRealize/dragTool.html" class="sidebar-link">拖拽功能的实现</a></li><li><a href="/zhwblog/originalRealize/raCheckStyle.html" class="sidebar-link">修改单选框和复选框的样式</a></li><li><a href="/zhwblog/originalRealize/jsModfiyCss.html" class="sidebar-link">javascript修改css样式的方法</a></li><li><a href="/zhwblog/originalRealize/cssFakeClass.html" class="sidebar-link">CSS链接伪类的顺序</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/zhwblog/github/githubVueToPages" class="sidebar-heading clickable"><span>gitHub相关</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/zhwblog/github/githubVueToPages.html" class="sidebar-link">如何部署vue到github</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/zhwblog/uniappAbout/eventDelegate" class="sidebar-heading clickable open active"><span>uniapp相关</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/zhwblog/uniappAbout/eventDelegate.html" aria-current="page" class="active sidebar-link">事件委托</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/zhwblog/uniappAbout/circleProgress/circleProgress.html" class="sidebar-link">圆环进度条实现</a></li><li><a href="/zhwblog/uniappAbout/styleAbout/styleAbout.html" class="sidebar-link">样式相关</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/zhwblog/canvas/canvas2d" class="sidebar-heading clickable"><span>canvas相关</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/zhwblog/uniappAbout/canvas/canvas2d.html" class="sidebar-link">canvas2d相关</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="_1、在标签中使用-data-进行绑定"><a href="#_1、在标签中使用-data-进行绑定" class="header-anchor">#</a> 1、在标签中使用:data-** 进行绑定</h3> <h3 id="_2、在父元素使用-click-clickchangereact-event"><a href="#_2、在父元素使用-click-clickchangereact-event" class="header-anchor">#</a> 2、在父元素使用 @click=&quot;clickChangeReact($event)&quot;</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;view @click=&quot;clickRow($event)&quot;&gt;
+	&lt;view :data-id=&quot;item.id&quot;&gt;{{item.date}}&lt;/view&gt;
+&lt;/view&gt;
+</code></pre></div><h3 id="_3、关于调用"><a href="#_3、关于调用" class="header-anchor">#</a> 3、关于调用</h3> <div class="language- extra-class"><pre class="language-text"><code>clickRow(e) {
+	// 判断点击的对象是否有这个属性
+	if(!e.target.dataset.id &amp;&amp; e.target.dataset.id !== 0) return true
+	
+	// e.target.dataset.id  获取绑定的data-id
+	// TODOO...
+}
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zhwblog/github/githubVueToPages.html" class="prev">
+        如何部署vue到github
+      </a></span> <span class="next"><a href="/zhwblog/uniappAbout/circleProgress/circleProgress.html">
+        圆环进度条实现
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/zhwblog/assets/js/app.ba016abe.js" defer></script><script src="/zhwblog/assets/js/2.977dbf13.js" defer></script><script src="/zhwblog/assets/js/15.8c6522ca.js" defer></script>
+  </body>
+</html>

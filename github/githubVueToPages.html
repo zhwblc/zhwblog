@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1、创建vue项目并且关联远程github仓库 | zhw 博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="张浩伟 的个人博客">
+    
+    <link rel="preload" href="/zhwblog/assets/css/0.styles.c0c0c0a9.css" as="style"><link rel="preload" href="/zhwblog/assets/js/app.ba016abe.js" as="script"><link rel="preload" href="/zhwblog/assets/js/2.977dbf13.js" as="script"><link rel="preload" href="/zhwblog/assets/js/3.e992ec7a.js" as="script"><link rel="prefetch" href="/zhwblog/assets/js/10.93a24e03.js"><link rel="prefetch" href="/zhwblog/assets/js/11.d09932f7.js"><link rel="prefetch" href="/zhwblog/assets/js/12.f34a940c.js"><link rel="prefetch" href="/zhwblog/assets/js/13.a83184c5.js"><link rel="prefetch" href="/zhwblog/assets/js/14.f3d970b7.js"><link rel="prefetch" href="/zhwblog/assets/js/15.8c6522ca.js"><link rel="prefetch" href="/zhwblog/assets/js/16.02b5dff0.js"><link rel="prefetch" href="/zhwblog/assets/js/4.3bcb3f64.js"><link rel="prefetch" href="/zhwblog/assets/js/5.8aa6e37c.js"><link rel="prefetch" href="/zhwblog/assets/js/6.5a1134b6.js"><link rel="prefetch" href="/zhwblog/assets/js/7.8db53882.js"><link rel="prefetch" href="/zhwblog/assets/js/8.fdd24300.js"><link rel="prefetch" href="/zhwblog/assets/js/9.90cbe809.js">
+    <link rel="stylesheet" href="/zhwblog/assets/css/0.styles.c0c0c0a9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zhwblog/" class="home-link router-link-active"><!----> <span class="site-name">zhw 博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zhwblog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://github.com/zhwblc" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zhwblog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://github.com/zhwblc" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/zhwblog/" class="sidebar-heading clickable router-link-active"><span>导航栏</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/zhwblog/" aria-current="page" class="sidebar-link">学前必读</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/zhwblog/originalRealize/dragTool" class="sidebar-heading clickable"><span>原生html+css+js实现功能</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/zhwblog/originalRealize/dragTool.html" class="sidebar-link">拖拽功能的实现</a></li><li><a href="/zhwblog/originalRealize/raCheckStyle.html" class="sidebar-link">修改单选框和复选框的样式</a></li><li><a href="/zhwblog/originalRealize/jsModfiyCss.html" class="sidebar-link">javascript修改css样式的方法</a></li><li><a href="/zhwblog/originalRealize/cssFakeClass.html" class="sidebar-link">CSS链接伪类的顺序</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/zhwblog/github/githubVueToPages" class="sidebar-heading clickable open active"><span>gitHub相关</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/zhwblog/github/githubVueToPages.html" aria-current="page" class="active sidebar-link">如何部署vue到github</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/zhwblog/uniappAbout/eventDelegate" class="sidebar-heading clickable"><span>uniapp相关</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/zhwblog/uniappAbout/eventDelegate.html" class="sidebar-link">事件委托</a></li><li><a href="/zhwblog/uniappAbout/circleProgress/circleProgress.html" class="sidebar-link">圆环进度条实现</a></li><li><a href="/zhwblog/uniappAbout/styleAbout/styleAbout.html" class="sidebar-link">样式相关</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/zhwblog/canvas/canvas2d" class="sidebar-heading clickable"><span>canvas相关</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/zhwblog/uniappAbout/canvas/canvas2d.html" class="sidebar-link">canvas2d相关</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="_1、创建vue项目并且关联远程github仓库"><a href="#_1、创建vue项目并且关联远程github仓库" class="header-anchor">#</a> 1、创建vue项目并且关联远程github仓库</h3> <h4 id="我这里创建的是table-change"><a href="#我这里创建的是table-change" class="header-anchor">#</a> 我这里创建的是table-change</h4> <h3 id="_2、创建并关联token"><a href="#_2、创建并关联token" class="header-anchor">#</a> 2、创建并关联token</h3> <h4 id="创建token"><a href="#创建token" class="header-anchor">#</a> 创建token</h4> <p><img src="/zhwblog/assets/img/image.8a2ac3cf.png" alt="image"></p> <p><img src="/zhwblog/assets/img/image(1).cacff789.png" alt="image"></p> <p><img src="/zhwblog/assets/img/image(2).cc2e556e.png" alt="image"></p> <h4 id="创建token的选中项"><a href="#创建token的选中项" class="header-anchor">#</a> 创建token的选中项</h4> <p>填写note，这个可以自己定义
+选中repo权限
+<img src="/zhwblog/assets/img/image(3).3c0b3b4f.png" alt="image">
+然后拖到最后选择创建，创建完成后只能看到一次token值，必须复制出来保存
+<img src="/zhwblog/assets/img/image(4).38012f74.png" alt="image"> <img src="/zhwblog/assets/img/image(5).f393e214.png" alt="image"></p> <h4 id="把刚才复制出来的token添加到需要管理的仓库中"><a href="#把刚才复制出来的token添加到需要管理的仓库中" class="header-anchor">#</a> 把刚才复制出来的token添加到需要管理的仓库中</h4> <p><img src="/zhwblog/assets/img/image(6).acd8c52d.png" alt="image"> <img src="/zhwblog/assets/img/image(7).0d56af48.png" alt="image"></p> <h4 id="创建actions变量"><a href="#创建actions变量" class="header-anchor">#</a> 创建actions变量</h4> <p>这里的Name是变量名字之后的actions里面会用到这个变量
+<img src="/zhwblog/assets/img/image(8).ec3284d3.png" alt="image"></p> <h3 id="_3、在远程github仓库的项目中创建actions"><a href="#_3、在远程github仓库的项目中创建actions" class="header-anchor">#</a> 3、在远程github仓库的项目中创建actions</h3> <p><img src="/zhwblog/assets/img/image(9).2acda872.png" alt="image"> <img src="/zhwblog/assets/img/image(10).deb4f502.png" alt="image"> <img src="/zhwblog/assets/img/image(11).bedd8e6c.png" alt="image"></p> <h4 id="具体代码"><a href="#具体代码" class="header-anchor">#</a> 具体代码</h4> <p>可以直接粘贴进去</p> <div class="language-cmd extra-class"><pre class="language-text"><code># 该workflow的名称，可以随意填写
+name: Build And Deploy To Github Pages
+
+# workflow的触发事件，这里代表main分支的push事件触发
+on:
+  push:
+    branches: [ main ]
+
+# 任务
+# 该workflow的名称，可以随意填写
+name: Build And Deploy To Github Pages
+
+# workflow的触发事件，这里代表main分支的push事件触发
+on:
+  push:
+    branches: [ main ]
+
+# 任务
+jobs:
+  # build-and-deploy 为任务的ID
+  build-and-deploy:
+    # 运行所需要的环境
+    runs-on: ubuntu-latest
+
+    steps:
+      # 步骤名
+      - name: Checkout
+        # 使用的actions脚本，这里是官方提供的获取源码脚本
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.15.1
+
+      # 执行npm脚本打包项目
+      - name: Install
+        run: |
+          npm install
+      - name: Build
+        run: |
+          npm run build
+      
+      # 执行crazy-max/ghaction-github-pages将项目发布到Github Pages
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          # 发布到的分支
+          target_branch: gh-pages
+          # 发布到的目录
+          build_dir: docs/.vuepress/dist
+        env:
+          # 关联的token，这里填写之前创建的action变量
+          GITHUB_TOKEN: ${{ secrets.VUETOKEN }}
+</code></pre></div><p>以上代码中的VUETOKEN，是之前自己配置的actions变量
+<img src="/zhwblog/assets/img/image(12).9adabd53.png" alt="image"></p> <p>创建完成后，查看自己code多了个文件，就是刚刚创建的action的文件目录，之后如果需要修改，可以在这里直接修改
+<img src="/zhwblog/assets/img/image(13).cc5a9aea.png" alt="image"></p> <h3 id="_4、查看已创建的action是否正常工作"><a href="#_4、查看已创建的action是否正常工作" class="header-anchor">#</a> 4、查看已创建的action是否正常工作</h3> <h4 id="提交更改代码测试如下"><a href="#提交更改代码测试如下" class="header-anchor">#</a> 提交更改代码测试如下</h4> <p>现在可以提交一下更改的代码，然后查看以下画面是否正常工作，如果正常，右下方列表应该是通过的标识--绿色的对钩。
+<img src="/zhwblog/assets/img/image(14).8f4f133a.png" alt="image"></p> <p>也可以点击进入查看具体的执行过程
+<img src="/zhwblog/assets/img/image(15).6a01b53a.png" alt="image"> <img src="/zhwblog/assets/img/image(16).b93ea9bc.png" alt="image"> <img src="/zhwblog/assets/img/image(17).3a4e257f.png" alt="image"></p> <h4 id="注意-自动部署成功后需要等待一会儿-github-pages-才会刷新"><a href="#注意-自动部署成功后需要等待一会儿-github-pages-才会刷新" class="header-anchor">#</a> 注意：自动部署成功后需要等待一会儿，github pages 才会刷新</h4></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zhwblog/originalRealize/cssFakeClass.html" class="prev">
+        CSS链接伪类的顺序
+      </a></span> <span class="next"><a href="/zhwblog/uniappAbout/eventDelegate.html">
+        事件委托
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/zhwblog/assets/js/app.ba016abe.js" defer></script><script src="/zhwblog/assets/js/2.977dbf13.js" defer></script><script src="/zhwblog/assets/js/3.e992ec7a.js" defer></script>
+  </body>
+</html>
