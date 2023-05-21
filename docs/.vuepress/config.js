@@ -1,6 +1,9 @@
 module.exports = {
   title: 'zhw 博客',
   description: '张浩伟 的个人博客',
+  // 发布到个人服务器
+  // base: '/',
+  // 发布到github pages
   base: '/zhwblog/',
   configureWebpack: {
     resolve: {
